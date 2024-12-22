@@ -12,7 +12,7 @@ const App = () => {
     <div className={'ui comments'}>
       <UserCard>
         <div>
-          Hello my name is Bailey!
+          Hello my name is Charlie!
         </div>
       </UserCard>
       <UserCard>
