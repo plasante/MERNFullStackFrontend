@@ -5,28 +5,40 @@ import profile2 from "./image/pic-2.jpg";
 import profile3 from './image/pic-3.jpg';
 import SingleComment from "./SingleComment";
 import './styles.css';
+import UserCard from "./UserCard";
 
 const App = () => {
   return (
     <div className={'ui comments'}>
-      <SingleComment
-        name={'Pierre'}
-        text={'Salut'}
-        date={'Today at 16:00'}
-        picture={profile1}
-      />
-      <SingleComment
-        name={'Karo'}
-        text={'A la revoyure'}
-        date={'Today at 17:00'}
-        picture={profile2}
-      />
-      <SingleComment
-        name={'Juby'}
-        text={'Est tiguidou!'}
-        date={'Today at 18:00'}
-        picture={profile3}
-      />
+      <UserCard>
+        <div>
+          Hello my name is Bailey!
+        </div>
+      </UserCard>
+      <UserCard>
+        <SingleComment
+          name={'Pierre'}
+          text={'Salut'}
+          date={'Today at 16:00'}
+          picture={profile1}
+        />
+      </UserCard>
+      <UserCard>
+        <SingleComment
+          name={'Micky'}
+          text={'A la revoyure'}
+          date={'Today at 17:00'}
+          picture={profile2}
+        />
+      </UserCard>
+      <UserCard>
+        <SingleComment
+          name={'Juby'}
+          text={'Est tiguidou!'}
+          date={'Today at 18:00'}
+          picture={profile3}
+        />
+      </UserCard>
     </div>
   )
 }
